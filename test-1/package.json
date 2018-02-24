@@ -1,0 +1,19 @@
+{
+  "name": "docker-multi-stage-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Daniël Illouz <daniel.illouz@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "prettier": "^1.10.2"
+  }
+}
