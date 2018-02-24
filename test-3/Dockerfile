@@ -1,0 +1,20 @@
+FROM node:9.6 AS build
+
+WORKDIR /app
+
+ENV NODE_ENV=production
+
+COPY package.json package-lock.json ./
+
+RUN [ "npm", "i" ]
+
+COPY src ./src
+
+RUN chown -R node:node .
+USER node
+
+FROM node:9.6
+
+COPY --from=build /app ./
+
+CMD [ "node", "src" ]
